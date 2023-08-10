@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import "modern-normalize";
+import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
   body {
@@ -16,10 +16,14 @@ export const GlobalStyle = createGlobalStyle`
     monospace;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-    object-fit: cover;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
   }
 
   ul, ol {
@@ -28,5 +32,9 @@ export const GlobalStyle = createGlobalStyle`
     list-style: none;
   }
 
-
-`
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+`;
