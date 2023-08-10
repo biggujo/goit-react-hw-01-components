@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Card = styled.article`
-  width: 250px;
+  width: 300px;
 
   box-shadow: ${props => props.theme.shadow.primary};
 
