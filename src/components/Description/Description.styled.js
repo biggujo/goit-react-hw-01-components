@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
-export const Wrapper = styled.section`
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
   height: 300px;
+
+  border: 1px solid #d3d3d3;
+  background-color: #ffffff;
 `;
 
 export const Avatar = styled.img`
