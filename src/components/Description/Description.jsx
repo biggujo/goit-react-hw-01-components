@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { Avatar, Title, Text } from './Description.styled';
+import { Avatar, Title, Text, Wrapper } from './Description.styled';
 
 export const Description = ({
   avatar,
@@ -7,13 +7,13 @@ export const Description = ({
   tag,
   location,
 }) => {
-  return <section>
+  return <Wrapper>
     <Avatar src={avatar}
             alt='User avatar' />
     <Title>{username}</Title>
     <Text>@{tag}</Text>
     <Text>{location}</Text>
-  </section>;
+  </Wrapper>;
 };
 
 Description.propTypes = {
