@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Card } from './Profile.styled';
 import { Description } from '../Description/Description';
-import { StatisticsList } from '../StatisticsList/StatisticsList';
+import { DescriptionList } from '../DescriptionList/DescriptionList';
 
 export const Profile = ({
   username,
@@ -14,7 +14,7 @@ export const Profile = ({
     <Description avatar={avatar} tag={tag}
                  location={location} username={username}>
     </Description>
-    <StatisticsList stats={stats} />
+    <DescriptionList stats={stats} />
   </Card>;
 };
 

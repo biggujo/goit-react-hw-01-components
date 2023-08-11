@@ -1,7 +1,7 @@
-import { Item, List, Text, TextStressed } from './StatisticsList.styled';
+import { Item, List, Text, TextStressed } from './DescriptionList.styled';
 import PropTypes from 'prop-types';
 
-export const StatisticsList = ({ stats }) => {
+export const DescriptionList = ({ stats }) => {
   return <List>
     {Object.entries(stats).map(([name, value]) => {
       return <Item key={name}>
@@ -12,7 +12,7 @@ export const StatisticsList = ({ stats }) => {
   </List>;
 };
 
-StatisticsList.propTypes = {
+DescriptionList.propTypes = {
   stats: PropTypes.exact({
     followers: PropTypes.number.isRequired,
     views: PropTypes.number.isRequired,
