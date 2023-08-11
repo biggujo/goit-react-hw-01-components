@@ -1,5 +1,5 @@
 import {
-  TableBody, BodyCell, TableHead, TableHeadCell, TableRow, Table,
+  TableBody, TableHead, TableHeadCell, TableRow, Table,
 } from './TransactionHistory.styled';
 import PropTypes from 'prop-types';
 import { TransactionItem } from '../TransactionItem/TransactionItem';
