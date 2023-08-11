@@ -1,9 +1,12 @@
 import { Profile } from '../Profile/Profile';
 import { Layout } from '../Layout/Layout.styled';
 import { GlobalStyle } from '../GlobalStyle';
+import { Statistics } from '../Statistics/Statistics';
+import { FriendsList } from '../FriendsList/FriendsList';
+
 import user from 'user.json';
 import data from 'data.json';
-import { Statistics } from '../Statistics/Statistics';
+import friends from 'friends.json';
 
 export const App = () => {
   return (<Layout>
@@ -15,6 +18,8 @@ export const App = () => {
 
     <Statistics title='Upload stats' stats={data} />
     <Statistics stats={data} />
+
+    <FriendsList friends={friends} />
 
     <GlobalStyle />
   </Layout>);
